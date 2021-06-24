@@ -1,5 +1,7 @@
 version: 0.2
-
+artifacts:
+   files:
+     - '**/*'
 phases:
   install:
     runtime-versions:
@@ -18,7 +20,4 @@ phases:
       - docker build -t indiragogineni/ci-test .
   post_build:
     commands:
-      - docker push indiragogineni/ci-test
-  artifacts:
-    files:
-      - '**/*'    
+      - docker push indiragogineni/ci-test    
