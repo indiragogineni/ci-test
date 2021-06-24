@@ -19,3 +19,6 @@ phases:
   post_build:
     commands:
       - docker push indiragogineni/ci-test
+  artifacts:
+    files:
+      - '**/*'    
