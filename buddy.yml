@@ -1,6 +1,6 @@
 - pipeline: 'CI-test'
   trigger_mode: 'ON_EVERY_PUSH'
-  ref_name: 'master'
+  ref_name: 'main'
   ref_type: 'BRANCH'
   trigger_condition: 'ALWAYS'
   actions:
